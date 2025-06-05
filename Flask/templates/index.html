@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Cricket Score</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e0f7fa;
+            color: #333;
+        }
+        
+        header {
+            background-color: #00796b;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        
+        .score-card {
+            max-width: 600px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .team {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .team-name {
+            font-weight: bold;
+        }
+
+        .match-info {
+            margin-top: 20px;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #004d40;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Live Cricket Score</h1>
+</header>
+
+<div class="score-card">
+    <div class="team">
+        <span class="team-name">India</span>
+        <span>185/3 (18.4)</span>
+    </div>
+    <div class="team">
+        <span class="team-name">Australia</span>
+        <span>182/6 (20)</span>
+    </div>
+    <div class="match-info">
+        <p class="live">India won by 7 wickets</p>
+        <p>2nd T20 | Eden Gardens, Kolkata</p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 Cricket Live Feed | Powered by YourName
+</footer>
+
+</body>
+</html>

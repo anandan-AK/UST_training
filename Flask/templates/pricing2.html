@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowva Pricing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .pricing-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .plan-title {
+            color: #2d3436;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            color: #6366f1;
+            margin-bottom: 1rem;
+        }
+
+        .billing-info {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .features-list {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .features-list li {
+            padding: 0.5rem 0;
+            color: #444;
+            border-bottom: 1px solid #eee;
+        }
+
+        .cta-button {
+            display: block;
+            text-align: center;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .free-tier {
+            background: #6366f1;
+            color: white;
+        }
+
+        .paid-tier {
+            background: #2d3436;
+            color: white;
+        }
+
+        .cta-button:hover {
+            opacity: 0.9;
+            transform: scale(1.05);
+        }
+
+        .highlight {
+            border: 2px solid #6366f1;
+        }
+
+        @media (max-width: 768px) {
+            .pricing-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-container">
+        <!-- Free Tier -->
+        <div class="pricing-card highlight">
+            <h2 class="plan-title">Knowva Free</h2>
+            <div class="price">FREE</div>
+            <div class="billing-info">TRY FOR FREE</div>
+            <ul class="features-list">
+                <li>Test goals here</li>
+                <li>Test goals here</li>
+                <li>Test goals here</li>
+                <li>Test goals here</li>
+                <li>Test goals here</li>
+            </ul>
+            <a href="free-tier.html" class="cta-button free-tier">Get Started</a>
+        </div>
+
+        <!-- Standard Tier -->
+        <div class="pricing-card">
+            <h2 class="plan-title">Knowvaa Standard</h2>
+            <div class="price">INR 499/M</div>
+            <div class="billing-info">Pay Yearly at 50% Off</div>
+            <ul class="features-list">
+                <li>Test goals here</li>
+                <li>Test goals here</li>
+                <li>Test goals here</li>
+                <li>Test goals here</li>
+                <li>Test goals here</li>
+            </ul>
+            <a href="standard-tier.html" class="cta-button paid-tier">Get Started</a>
+        </div>
+
+        <!-- Pro Tier -->
+        <div class="pricing-card">
+            <h2 class="plan-title">Knowva Pro</h2>
+            <div class="price">INR 1000/M</div>
+            <div class="billing-info">Pay Yearly at 50% Off</div>
+            <ul class="features-list">
+                <li>Test goals here</li>
+                <li>Test goals here</li>
+                <li>Test goals here</li>
+                <li>Test goals here</li>
+                <li>Test goals here</li>
+            </ul>
+            <a href="pro-tier.html" class="cta-button paid-tier">Get Started</a>
+        </div>
+
+        <!-- Advance Tier -->
+        <div class="pricing-card">
+            <h2 class="plan-title">Knowva Advance</h2>
+            <div class="price">INR 1300/M</div>
+            <div class="billing-info">Pay Yearly at 50% Off</div>
+            <ul class="features-list">
+                <li>Test goals here</li>
+                <li>Test goals here</li>
+                <li>Test goals here</li>
+                <li>Test goals here</li>
+                <li>Test goals here</li>
+            </ul>
+            <a href="advance-tier.html" class="cta-button paid-tier">Get Started</a>
+        </div>
+    </div>
+</body>
+</html>
